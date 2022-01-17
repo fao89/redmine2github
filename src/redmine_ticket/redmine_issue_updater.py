@@ -116,11 +116,11 @@ class RedmineIssueUpdater:
 
             #msg(updated_description)
 
-            CLOSED_DUPLICATE = 12
+            # CLOSED_DUPLICATE = 12
             update_params = dict(
                 project_id=self.project_name_or_identifier,
                 description=updated_description,
-                status_id=CLOSED_DUPLICATE,
+                # status_id=CLOSED_DUPLICATE,
             )
 
 
