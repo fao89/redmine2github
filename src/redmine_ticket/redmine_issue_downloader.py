@@ -294,7 +294,7 @@ if __name__=='__main__':
     #rn = RedmineIssueDownloader(REDMINE_SERVER, REDMINE_API_KEY, 'dvn', REDMINE_ISSUES_DIRECTORY)
     #Only import some specific tickets
     #kwargs = dict(specific_tickets_to_download=[1371, 1399, 1843, 2214, 2215, 2216, 3362, 3387, 3397, 3400, 3232, 3271, 3305, 3426, 3425, 3313, 3208])
-    rn = RedmineIssueDownloader(REDMINE_SERVER, REDMINE_API_KEY, REDMINE_PROJECT_ID, REDMINE_ISSUES_DIRECTORY, issue_status="open")
+    rn = RedmineIssueDownloader(REDMINE_SERVER, REDMINE_API_KEY, REDMINE_PROJECT_ID, REDMINE_ISSUES_DIRECTORY, issue_status="4", specific_tickets_to_download=[8798,9481,9623,9634,9639,9642,9660,9666,9667, 9637,9665])
     rn.download_tickets2()
 
     msg(rn.get_issue_count())
